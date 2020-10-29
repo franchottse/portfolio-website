@@ -29,7 +29,7 @@ export default function StartupProject() {
                                         <div
                                             className="saaya-health-div"
                                             onClick={() => openProjectInNewWindow(project.link)}>
-                                            <img alt="Saad Working" src={project.image}></img>
+                                            <img alt="Frankie Working" src={project.image}></img>
                                         </div>
                                     );
                                 })}
