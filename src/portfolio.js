@@ -103,7 +103,19 @@ const educationInfo = {
             duration: 'September 2016 - November 2019',
             desc: 'Studied basic knowledge of both software and hardware',
             descBullets: [
+                'Received bachelor of engineering in Computer Engineering',
                 'Finished a final year project, which is a 2D top-down game, with Unity and C#',
+            ],
+        },
+        {
+            schoolName: 'Hong Kong Institude of Vocational Education',
+            logo: require('./assets/images/iveLogo.png'),
+            subHeader: 'Higher Diploma in Telecommunications and Networking',
+            duration: 'September 2014 - June 2016',
+            desc: 'Studied basic knowledge of both telecommunication and networking',
+            descBullets: [
+                'Received higher diploma in Telecommunications & Networking',
+                'With Distinction',
             ],
         },
     ],
@@ -134,6 +146,16 @@ const techStack = {
 const workExperiences = {
     viewExperiences: true, //Set it to true to show workExperiences Section
     experience: [
+        {
+            role: 'Software Engineer',
+            company: 'Robot Data Company Limited',
+            companylogo: require('./assets/images/robotdataLogo.png'),
+            date: 'January 2021 – Present',
+            desc: "Develop software and satisfy clients' needs.",
+            descBullets: [
+                'Developed a script to web-scrap all images from a website, and scan copyright logos by OCR.',
+            ],
+        },
         {
             role: 'Analyst Programmer/Developer',
             company: 'IBM',
