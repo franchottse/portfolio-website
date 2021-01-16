@@ -4,6 +4,10 @@
 
 import emoji from 'react-easy-emoji';
 
+const illustration = {
+    animated: true, // set to false to use static SVG
+};
+
 const greeting = {
     /* Your Summary And Greeting Section */
     username: 'Frankie Tse',
@@ -14,6 +18,7 @@ const greeting = {
     ),
     resumeLink:
         'https://drive.google.com/file/d/18Of97gns_cdJmLaST-3u-G-H9ou_Mxce/view?usp=sharing',
+    displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
 // Your Social Media Link
@@ -27,6 +32,7 @@ const socialMediaLinks = {
     medium: '',
     stackoverflow: 'https://stackoverflow.com/users/13474348/frankie',
     // Instagram and Twitter are also supported in the links!
+    display: true, // Set true to display this section, defaults to false
 };
 
 // Your Skills Section
@@ -89,12 +95,13 @@ https://fontawesome.com/icons?d=gallery */
             fontAwesomeClassname: 'fas fa-database',
         },
     ],
+    display: true, // Set false to hide this section, defaults to true
 };
 
 // Your education background
 
 const educationInfo = {
-    viewEducation: true, // Set it to true to see education section
+    display: true, // Set false to hide this section, defaults to true
     schools: [
         {
             schoolName: 'Hong Kong University of Science and Technology',
@@ -139,12 +146,13 @@ const techStack = {
             progressPercentage: '65%',
         },
     ],
+    displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Your top 3 work experiences
 
 const workExperiences = {
-    viewExperiences: true, //Set it to true to show workExperiences Section
+    display: true, //Set it to true to show workExperiences Section
     experience: [
         {
             role: 'Software Engineer',
@@ -190,12 +198,12 @@ const openSource = {
     githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
     githubUserName: 'franchottse', // Change to your github username to view your profile in Contact Section.
     showGithubProfile: 'true', // Set true or false to show Contact profile using Github, defaults to false
+    display: true, // Set false to hide this section, defaults to true
 };
 
 // Some Big Projects You have worked with your company
 
 const bigProjects = {
-    viewProjects: false, //Set it to true to show Big Projects Section
     title: 'Big Projects',
     subtitle: '',
     projects: [
@@ -208,12 +216,12 @@ const bigProjects = {
             link: '',
         },
     ],
+    display: false, // Set false to hide this section, defaults to true
 };
 
 // Your Achievement Section Include Your Certification Talks and More
 
 const achievementSection = {
-    viewAchievements: false, //Set it to true to show Achievements Section
     title: emoji('Achievements And Certifications 🏆 '),
     subtitle: 'Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !',
 
@@ -262,12 +270,12 @@ const achievementSection = {
             ],
         },
     ],
+    display: true, // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
 
 const blogSection = {
-    viewBlogs: false, //Set it to true to show Blogs Section
     title: 'Blogs',
     subtitle:
         'With Love for Developing cool stuff, I love to write and teach others what I have learnt.',
@@ -284,12 +292,12 @@ const blogSection = {
             description: '',
         },
     ],
+    display: true, // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
 
 const talkSection = {
-    viewTalks: false, //Set it to true to show Talks Section
     title: 'TALKS',
     subtitle: emoji('I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅'),
 
@@ -301,17 +309,18 @@ const talkSection = {
             event_url: '',
         },
     ],
+    display: true, // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
 
 const podcastSection = {
-    viewPodcast: false, //Set it to true to show Podcast Section
     title: emoji('Podcast 🎙️'),
     subtitle: 'I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY',
 
     // Please Provide with Your Podcast embeded Link
     podcast: [''],
+    display: false, // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
@@ -325,8 +334,10 @@ const contactInfo = {
 
 const twitterDetails = {
     userName: '', //Replace "twitter" with your twitter username without @
+    display: false, // Set true to display this section, defaults to false
 };
 export {
+    illustration,
     greeting,
     socialMediaLinks,
     skillsSection,
