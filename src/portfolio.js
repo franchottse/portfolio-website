@@ -270,7 +270,7 @@ const achievementSection = {
             ],
         },
     ],
-    display: true, // Set false to hide this section, defaults to true
+    display: false, // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -292,7 +292,7 @@ const blogSection = {
             description: '',
         },
     ],
-    display: true, // Set false to hide this section, defaults to true
+    display: false, // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -309,7 +309,7 @@ const talkSection = {
             event_url: '',
         },
     ],
-    display: true, // Set false to hide this section, defaults to true
+    display: false, // Set false to hide this section, defaults to true
 };
 
 // Podcast Section

@@ -6,17 +6,24 @@ import StyleContext from '../../contexts/StyleContext';
 import {
     greeting,
     workExperiences,
-    achievementSection,
+    skillsSection,
+    openSource,
     blogSection,
     talkSection,
+    achievementSection,
+    educationInfo,
 } from '../../portfolio';
 
 function Header() {
     const { isDark } = useContext(StyleContext);
-    const exp = workExperiences.viewExperiences;
-    const achievement = achievementSection.viewAchievements;
-    const blog = blogSection.viewBlogs;
-    const talk = talkSection.viewTalks;
+    const viewExperience = workExperiences.display;
+    const viewOpenSource = openSource.display;
+    const viewSkills = skillsSection.display;
+    const viewAchievement = achievementSection.display;
+    const viewBlog = blogSection.display;
+    const viewTalks = talkSection.display;
+    const viewEducation = educationInfo.display;
+
     return (
         <Headroom>
             <header className={isDark ? 'dark-menu header' : 'header'}>
@@ -30,28 +37,37 @@ function Header() {
                     <span className={isDark ? 'navicon navicon-dark' : 'navicon'}></span>
                 </label>
                 <ul className={isDark ? 'dark-menu menu' : 'menu'}>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    {exp === true && (
+                    {viewSkills && (
+                        <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+                    )}
+                    {viewEducation && (
+                        <li>
+                            <a href="#education">Education</a>
+                        </li>
+                    )}
+                    {viewExperience && (
                         <li>
                             <a href="#experience">Work Experiences</a>
                         </li>
                     )}
-                    <li>
-                        <a href="#opensource">Open Source</a>
-                    </li>
-                    {achievement === true && (
+                    {viewOpenSource && (
+                        <li>
+                            <a href="#opensource">Open Source</a>
+                        </li>
+                    )}
+                    {viewAchievement && (
                         <li>
                             <a href="#achievements">Achievements</a>
                         </li>
                     )}
-                    {blog === true && (
+                    {viewBlog && (
                         <li>
                             <a href="#blogs">Blogs</a>
                         </li>
                     )}
-                    {talk === true && (
+                    {viewTalks && (
                         <li>
                             <a href="#talks">Talks</a>
                         </li>
