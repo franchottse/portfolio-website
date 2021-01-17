@@ -156,7 +156,7 @@ const workExperiences = {
     experience: [
         {
             role: 'Software Engineer',
-            company: 'Robot Data Company Limited',
+            company: 'Robot Data',
             companylogo: require('./assets/images/robotdataLogo.png'),
             date: 'January 2021 – Present',
             desc: "Develop software and satisfy clients' needs.",
