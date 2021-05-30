@@ -139,7 +139,7 @@ const educationInfo = {
             ],
         },
         {
-            schoolName: 'Hong Kong Institude of Vocational Education',
+            schoolName: 'Hong Kong Institute of Vocational Education',
             logo: require('./assets/images/iveLogo.png'),
             subHeader: 'Higher Diploma in Telecommunications and Networking',
             duration: 'September 2014 - June 2016',
