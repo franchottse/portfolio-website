@@ -12,9 +12,9 @@ const greeting = {
     /* Your Summary And Greeting Section */
     username: 'Frankie Tse',
     title: "Hi, My name is Frankie and I'm a ",
-    role: ['Software Engineer', 'Frontend Developer', 'Backend Developer'],
+    role: ['Software Engineer', 'Frontend Developer', 'Backend Developer', 'Full Stack Developer'],
     subTitle: emoji(
-        'A passionate Software Engineer aiming to be a competent developer with JavaScript / ReactJS / Python and some other cool libraries and frameworks.'
+        'A passionate Software Engineer aiming to be a competent developer with Angular / ReactJS / TypeScript and some other cool libraries and frameworks.'
     ),
     resumeLink:
         'https://drive.google.com/file/d/18Of97gns_cdJmLaST-3u-G-H9ou_Mxce/view?usp=sharing',
@@ -41,8 +41,8 @@ const skillsSection = {
     title: 'What I know',
     subTitle: 'A SOFTWARE ENGINEER WHO WANTS TO LEARN EVERY NEW TECH',
     skills: [
-        emoji('⚡ Self-taught Software Engineer working hard to learn Python and ReactJS'),
-        emoji('⚡ Develop a Tkinter GUI app with Python'),
+        emoji('⚡ Software engineer working hard to learn ReactJS and AngularJS'),
+        emoji('⚡ Developed a Tkinter GUI app with Python'),
         emoji('⚡ Eager to learn new technology and programming langauges'),
     ],
 
@@ -50,18 +50,6 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
     softwareSkills: [
-        {
-            skillName: 'python',
-            fontAwesomeClassname: 'fab fa-python',
-        },
-        {
-            skillName: 'c++',
-            fontAwesomeClassname: 'fab fa-cuttlefish',
-        },
-        {
-            skillName: 'java',
-            fontAwesomeClassname: 'fab fa-java',
-        },
         {
             skillName: 'html-5',
             fontAwesomeClassname: 'fab fa-html5',
@@ -74,17 +62,41 @@ https://fontawesome.com/icons?d=gallery */
             skillName: 'JavaScript',
             fontAwesomeClassname: 'fab fa-js',
         },
+        // {
+        //     skillName: 'TypeScript',
+        //     fontAwesomeClassname: 'fab fa-ts', do not have this icon yet
+        // },
         {
             skillName: 'reactjs',
             fontAwesomeClassname: 'fab fa-react',
         },
         {
-            skillName: 'npm',
-            fontAwesomeClassname: 'fab fa-npm',
+            skillName: 'angularjs',
+            fontAwesomeClassname: 'fab fa-angular',
+        },
+        {
+            skillName: 'nodejs',
+            fontAwesomeClassname: 'fab fa-node',
+        },
+        {
+            skillName: 'python',
+            fontAwesomeClassname: 'fab fa-python',
+        },
+        {
+            skillName: 'java',
+            fontAwesomeClassname: 'fab fa-java',
         },
         {
             skillName: 'git',
-            fontAwesomeClassname: 'fab fa-git',
+            fontAwesomeClassname: 'fab fa-git-alt',
+        },
+        {
+            skillName: 'c++',
+            fontAwesomeClassname: 'fab fa-cuttlefish',
+        },
+        {
+            skillName: 'npm',
+            fontAwesomeClassname: 'fab fa-npm',
         },
         {
             skillName: 'unity',
@@ -93,6 +105,18 @@ https://fontawesome.com/icons?d=gallery */
         {
             skillName: 'sql-database',
             fontAwesomeClassname: 'fas fa-database',
+        },
+        // {
+        //     skillName: 'mongodb',
+        //     fontAwesomeClassname: 'fab fa-mongodb', do not have this icon yet
+        // },
+        {
+            skillName: 'aws',
+            fontAwesomeClassname: 'fab fa-aws',
+        },
+        {
+            skillName: 'docker',
+            fontAwesomeClassname: 'fab fa-docker',
         },
     ],
     display: true, // Set false to hide this section, defaults to true
@@ -135,7 +159,7 @@ const techStack = {
     experience: [
         {
             Stack: 'Frontend', //Insert stack or technology you have experience in
-            progressPercentage: '50%', //Insert relative proficiency in percentage
+            progressPercentage: '60%', //Insert relative proficiency in percentage
         },
         {
             Stack: 'Backend',
@@ -156,36 +180,34 @@ const workExperiences = {
     experience: [
         {
             role: 'Software Engineer',
-            company: 'Robot Data',
-            companylogo: require('./assets/images/robotdataLogo.png'),
-            date: 'January 2021 – Present',
-            desc: "Develop software and satisfy clients' needs.",
+            company: 'New iMedia',
+            companylogo: require('./assets/images/newimediaLogo.png'),
+            date: 'Apr 2021 – Present',
+            desc: 'Develop websites',
             descBullets: [
-                'Developed a script to web-scrap all images from a website, and scan copyright logos by OCR.',
+                'Improve the performance for digital marketing by developing a platform which can view ads reports from an account',
             ],
         },
         {
-            role: 'Analyst Programmer/Developer',
+            role: 'Software Engineer',
+            company: 'Robot Data',
+            companylogo: require('./assets/images/robotdataLogo.png'),
+            date: 'Jan 2021 – Apr 2021',
+            desc: "Develop software and satisfy clients' needs",
+            descBullets: [
+                'Created a script to web-scrap all images from a website, and scan copyright logos by OCR',
+                'Helped a client to develop a web to upload photos of underground tracks and detect cracks',
+            ],
+        },
+        {
+            role: 'Analyst Programmer',
             company: 'IBM',
             companylogo: require('./assets/images/ibmLogo.png'),
-            date: 'Nov 2019 – June 2020',
-            desc: 'Develop software and support target clients.',
+            date: 'Nov 2019 – Jun 2020',
+            desc: 'Develop software and support target clients',
             descBullets: [
                 'Increased efficiency by developing a shell script for deploying WSDL files on a device called DataPower (CPA project)',
                 'Achieved user satisfaction by supporting clients from DBS bank and implementing a regression test on UAT for frontend development (DBS project)',
-            ],
-        },
-        {
-            role: 'Network Engineer Intern',
-            company: 'Telelink',
-            companylogo: require('./assets/images/telelinkLogo.png'),
-            date: 'Dec 2014 – Mar 2015',
-            desc: 'Provide services to target clients.',
-            descBullets: [
-                'Provided assistance to network users regarding troubleshooting and procedures',
-                'Assisted technicians with the installation of wires at home',
-                'Assisted technicians with the setup of routers',
-                'Assisted with the evaluation and selection of network hardware and software',
             ],
         },
     ],
